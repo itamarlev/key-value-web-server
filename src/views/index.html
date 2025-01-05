@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key-Value Store</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Key-Value Store</h1>
+    <div>
+        <h2>Store Key-Value Pair</h2>
+        <form id="storeForm">
+            <input type="text" id="key" placeholder="Key" required>
+            <input type="text" id="value" placeholder="Value" required>
+            <button type="submit">Store</button>
+        </form>
+    </div>
+    <div>
+        <h2>Retrieve Value</h2>
+        <form id="retrieveForm">
+            <input type="text" id="retrieveKey" placeholder="Key" required>
+            <button type="submit">Retrieve</button>
+        </form>
+        <p id="retrieveResult"></p>
+    </div>
+    <div>
+        <h2>All Key-Value Pairs</h2>
+        <button id="retrieveAllButton">Retrieve All</button>
+        <ul id="keyValueList"></ul>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
